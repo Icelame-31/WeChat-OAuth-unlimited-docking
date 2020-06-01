@@ -19,8 +19,11 @@
 2、创建站点，伪静态配置为ThinkPHP修改配置信息。
 3、创建数据库，导入sql文件。
 4、修改配置信息：Application/Common/Conf/config.php，修改你的数据库信息和微信公众号信息。
+
 **三、使用方法**
+
 **接口请求**
+
 接口地址：http://你的域名/wxlogin（或者：http://你的域名/index.php/Home/Api/wxlogin）
 
 请求方式：GET
@@ -35,8 +38,11 @@
 签名算法：` md5(md5($time)."Vxd5zV4o");`
 
 **回调通知**
+
 回调地址：请求接口时传递的return_url参数
+
 请求方式：GET
+
 请求参数：
 
 |参数名 | 示例 | 说明 |
