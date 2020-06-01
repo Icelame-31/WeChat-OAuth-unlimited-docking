@@ -8,7 +8,7 @@
 ## 原理图
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/20200530212522947.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTc4NjgxMg==,size_16,color_FFFFFF,t_70#pic_center)
 ## 源代码
-将代理系统的源代码托管到了github，传送门：[https://github.com/Icelame-31/WeChat-OAuth-unlimited-docking](https://github.com/Icelame-31/WeChat-OAuth-unlimited-docking)，有需要的可以下载学习。但是只是基础版。另有功能完善的完整版，包括3种类型的代理系统，及用户系统，可以付费给他人调用。另有技术交流QQ群：1028142470，有兴趣的朋友可以入群交流。
+将代理系统的源代码托管到了github，传送门：[https://github.com/Icelame-31/WeChat-OAuth-unlimited-docking](https://github.com/Icelame-31/WeChat-OAuth-unlimited-docking)，有需要的可以下载学习。但是只是基础版。另有功能完善的完整版，包括3种类型的代理系统，及用户系统，可以付费给他人调用。有需要的欢迎加入技术交流QQ群：1028142470，有兴趣的朋友可以入群交流。
 ## 使用方法
 **一、环境准备**
 一台独立的服务器，已解析的域名，服务器配置环境：
@@ -19,47 +19,21 @@
 2、创建站点，伪静态配置为ThinkPHP修改配置信息。
 3、创建数据库，导入sql文件。
 4、修改配置信息：Application/Common/Conf/config.php，修改你的数据库信息和微信公众号信息。
-<<<<<<< HEAD
 **三、使用方法**
 **接口请求**
 接口地址：http://你的域名/wxlogin（或者：http://你的域名/index.php/Home/Api/wxlogin）
 请求方式：GET
 请求参数：
-=======
-
-**三、使用方法**
-
-**接口请求**
-
-接口地址：http://你的域名/wxlogin（或者：http://你的域名/index.php/Home/Api/wxlogin）
-
-请求方式：GET
-
-请求参数：
-
->>>>>>> a00fe9c45db119aae07da702bec47f70900908ef
 |参数名 | 示例 | 说明 |
 |--|--|--|
 | time| 1580580122| 发起请求的时间戳 |
 | return_url | http://www.qq.com/return_url.php | 项目回调地址 |
 | sign | ab3aba691a0962a10f9d4ae9a68730de | 数据签名 |
 签名算法：` md5(md5($time)."Vxd5zV4o");`
-<<<<<<< HEAD
 **回调通知**
 回调地址：请求接口时传递的return_url参数
 请求方式：GET
 请求参数：
-=======
-
-**回调通知**
-
-回调地址：请求接口时传递的return_url参数
-
-请求方式：GET
-
-请求参数：
-
->>>>>>> a00fe9c45db119aae07da702bec47f70900908ef
 |参数名 | 示例 | 说明 |
 |--|--|--|
 | openid| OPENID| 用户的唯一标识 |
