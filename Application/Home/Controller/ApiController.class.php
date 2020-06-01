@@ -13,7 +13,6 @@ class ApiController extends Controller {
 	
 	//登录请求接口
     public function wxlogin(){
-        //
         $return_url = trim(I('return_url',''));
         //验证sign
         $sign = trim(I('sign',''));
