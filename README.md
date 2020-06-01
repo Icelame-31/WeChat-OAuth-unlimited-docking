@@ -10,14 +10,23 @@
 ## 源代码
 将代理系统的源代码托管到了github，传送门：[https://github.com/Icelame-31/WeChat-OAuth-unlimited-docking](https://github.com/Icelame-31/WeChat-OAuth-unlimited-docking)，有需要的可以下载学习。但是只是基础版。另有功能完善的完整版，包括3种类型的代理系统，及用户系统，可以付费给他人调用。有需要的欢迎加入技术交流QQ群：1028142470，有兴趣的朋友可以入群交流。
 ## 使用方法
+
 **一、环境准备**
+
 一台独立的服务器，已解析的域名，服务器配置环境：
+
 操作系统：CentOS7.6 64位
+
 服务器环境：Apache2.4、Mysql5.6、PHP5.6+
+
 **二、安装步骤：**
+
 1、下载源码到项目根目录
+
 2、创建站点，伪静态配置为ThinkPHP修改配置信息。
+
 3、创建数据库，导入sql文件。
+
 4、修改配置信息：Application/Common/Conf/config.php，修改你的数据库信息和微信公众号信息。
 
 **三、使用方法**
