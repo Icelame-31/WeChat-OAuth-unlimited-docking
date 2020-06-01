@@ -19,21 +19,47 @@
 2、创建站点，伪静态配置为ThinkPHP修改配置信息。
 3、创建数据库，导入sql文件。
 4、修改配置信息：Application/Common/Conf/config.php，修改你的数据库信息和微信公众号信息。
+<<<<<<< HEAD
 **三、使用方法**
 **接口请求**
 接口地址：http://你的域名/wxlogin（或者：http://你的域名/index.php/Home/Api/wxlogin）
 请求方式：GET
 请求参数：
+=======
+
+**三、使用方法**
+
+**接口请求**
+
+接口地址：http://你的域名/wxlogin（或者：http://你的域名/index.php/Home/Api/wxlogin）
+
+请求方式：GET
+
+请求参数：
+
+>>>>>>> a00fe9c45db119aae07da702bec47f70900908ef
 |参数名 | 示例 | 说明 |
 |--|--|--|
 | time| 1580580122| 发起请求的时间戳 |
 | return_url | http://www.qq.com/return_url.php | 项目回调地址 |
 | sign | ab3aba691a0962a10f9d4ae9a68730de | 数据签名 |
 签名算法：` md5(md5($time)."Vxd5zV4o");`
+<<<<<<< HEAD
 **回调通知**
 回调地址：请求接口时传递的return_url参数
 请求方式：GET
 请求参数：
+=======
+
+**回调通知**
+
+回调地址：请求接口时传递的return_url参数
+
+请求方式：GET
+
+请求参数：
+
+>>>>>>> a00fe9c45db119aae07da702bec47f70900908ef
 |参数名 | 示例 | 说明 |
 |--|--|--|
 | openid| OPENID| 用户的唯一标识 |
